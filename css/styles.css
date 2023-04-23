@@ -462,10 +462,6 @@ ol {
   display: flex;
 }
 
-.footer-input-wrapper {
-  position: relative;
-}
-
 .footer-form-input {
   width: 264px;
   height: 40px;
@@ -477,21 +473,6 @@ ol {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: var(--primary-white-color);
-}
-
-.footer-form-label {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  line-height: 2;
-  color: var(--primary-white-color);
-}
-
-.footer-form-input:focus + .footer-form-label {
-  display: none;
 }
 
 .footer-button-icon {
@@ -508,6 +489,12 @@ ol {
   border-radius: 4px;
   color: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-input::placeholder {
+  line-height: 2px;
+  letter-spacing: 0.04em;
+  color: var(--primary-white-color);
 }
 
 .footer-form-button:hover,
